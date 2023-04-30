@@ -58,9 +58,40 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* global styles */
+
 h1, h2, h3, h4, h5, button {
     font-family: 'Cinzel', serif;
 }
 p, label {
     font-family: 'Fauna One', serif;
+}
+
+/*nav bar */
+header {
+    background-color: 
+    #a5b494;
+    padding: 10px;
+    box-shadow: 0 0 50px black;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.login {
+    display: flex;
+    justify-content: right;
+}
+
+.login button {
+    margin-right: 10px;
 }
