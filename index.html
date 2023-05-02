@@ -84,21 +84,35 @@
         <h2>Contact</h2>
         <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
         <form>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="instrument">Instrument:</label>
-            <input type="instrument" id="instrument" name="instrument">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="gdpr">I consent to having this website store my submitted information so they can respond to my enquiry.</label>
-            <input type="checkbox" id="gdpr" name="gdpr">
-            <input type="submit" value="Submit" id="submit">
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" minlength="3" required>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="instrument">Instrument:</label>
+                <input type="instrument" id="instrument" name="instrument" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="gdpr">I consent to having this website store my submitted information so they can respond to my enquiry.</label>
+                <input type="checkbox" id="gdpr" name="gdpr" required>
+            </div>    
+                <input type="submit" value="Submit" id="submit">
         </form>
     </section>
     <!--bootstrap script-->

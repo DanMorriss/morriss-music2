@@ -202,3 +202,35 @@ body {
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
 }
+
+
+/* Contact Form */
+/*
+Web Dev Simplified for color change
+https://www.youtube.com/watch?v=K6CWjkDgQnE */
+
+label:has(+ input:valid) { 
+  color: green;
+}
+label:has(+ input:valid)::before {
+  margin-right: .25em;
+}
+label:has(+ input:invalid) {
+  color:red;
+}
+label:has(+ input:invalid)::before {
+  margin-right: .25em;
+}
+/* same thing for the textare */
+label:has(+ textarea:valid) { 
+  color: green;
+}
+label:has(+ textarea:valid)::before {
+  margin-right: .25em;
+}
+label:has(+ textarea:invalid) {
+  color:red;
+}
+label:has(+ textarea:invalid)::before {
+  margin-right: .25em;
+}
