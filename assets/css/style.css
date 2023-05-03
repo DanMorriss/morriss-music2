@@ -4,13 +4,8 @@ font-family: 'Fauna One', serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fauna+One&display=swap');
 
-/* colors from https://mycolor.space/?hex=%2366C99F&sub=1
-#66C99F
-#42AF9D
-#2C9595
-#297A87
-#2E6172
-#2F4858
+/* colors pallet 
+https://color.adobe.com/Green-Blaze-color-theme-f43afa51-84f4-4c52-9114-15d25488e2dd/
 */
 /* CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/
   1. Use a more-intuitive box-sizing model. */
@@ -53,15 +48,22 @@ p, h1, h2, h3, h4, h5, h6 {
 /* global styles */
 h1, h2, h3, h4, h5, button {
     font-family: 'Cinzel', serif;
+    color: #223B33;
 }
 p, label {
     font-family: 'Fauna One', serif;
+    color: #223B33;
+}
+
+body {
+  background-color: #F4F6F1;
+  
 }
 
 /*nav bar */
 header {
-  background-image: linear-gradient(to right top, #66c99f, #5cc39f, #53bc9f, #4ab69e, #42af9d);
-  box-shadow: 0 0 50px black;
+  background-image: linear-gradient(to top, #b1d8b7, #7A9B7F);
+  box-shadow: 0 0 50px #223B33;
 }
 
 #navbar ul {
@@ -105,8 +107,8 @@ body {
   --bar-width: 60px;
   --bar-height: 8px;
   --hamburger-gap: 6px;
-  --foreground: #333;
-  --background: white;
+  --foreground: #223B33;
+  --background: #F4F6F1;
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
