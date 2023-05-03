@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="x-menu">
+        <!-- <div class="x-menu">
             <label class="hamburger-menu">
                 <input type="checkbox" />
             </label>
@@ -23,7 +23,7 @@
                 <div>Sidebar</div>
                 </nav>
             </aside>
-        </div>
+        </div> -->
         <div id="navbar">
             <div>
                 <div class="logo">
@@ -45,7 +45,7 @@
         </div>
     </header>
     
-    <section>
+    <section class="info-box">
         <h1>Morriss Music</h1>
         <p>Professional guitar, bass and ukulele tuition with RGT registered tutor Daniel Morriss LLCM (TD). Zoom lessons are now available!</p>
         <p>All ages and abilities welcome, whether you’re looking to improve your playing, pick up an instrument for the first time or want music lessons for your kids.</p>
@@ -59,7 +59,7 @@
         <p>After writing songs that have been played on radio and television across the globe, playing sold out stadium gigs and numerous festivals Daniel has found a new love for teaching and is a Licentiate of the London College of Music for Guitar Tuition. He teaches the electric guitar, acoustic guitar, classical guitar, bass guitar and the ukulele in one-to-one lessons and group sessions at his studio in Marlborough as well as at Cheam and Brockhurst schools.</p>
         <p>Daniel still enjoys gigging on the bass and guitar playing sessions across the UK & Europe with bands including Ruby Boots and Alibis. He is a founding member and house Bass player for the Newbury Jazz Platform.</p>
     </section>
-    <section>
+    <section class="info-box">
         <h2>Online Lessons</h2>
         <p>Beginner to advanced Guitar, Bass and Ukulele lessons in music and music theory  covering everthing you need to improve your playing and covering styles including Rock, Pop, Blues, Funk, Jazz, Metal, Fingerstyle & Classical</p>
         <h3>Guitar Lessons</h3>
@@ -80,38 +80,40 @@
         <p>The ukulele is one of the easiest instruments to learn and a great gateway to many other instruments. Your first chord takes seconds to master and you’ll be strumming along to a song within half an hour.</p>
         <p>Just because its easy to pick up doesn’t mean that we can’t push ourselves. I have a catalogue of songs specifically arranged for varying difficulty using a variety of techniques including strumming, finger-picking & percussive rhythm playing. All that can be played solo, with the record or as part of a group.</p>
     </section>
-    <section>
+    <section class="info-box">
         <h2>Contact</h2>
         <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
         <form>
-            <div>
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" minlength="3" required>
-            </div>
-            <div>
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="instrument">Instrument:</label>
-                <input type="instrument" id="instrument" name="instrument" required>
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div>
-                <label for="gdpr">I consent to having this website store my submitted information so they can respond to my enquiry.</label>
-                <input type="checkbox" id="gdpr" name="gdpr" required>
-            </div>    
+            <div class="questions">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" minlength="3" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="instrument">Instrument:</label>
+                    <input type="instrument" id="instrument" name="instrument" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="gdpr">I consent to having this website store my submitted information so they can respond to my enquiry.</label>
+                    <input type="checkbox" id="gdpr" name="gdpr" required>
+                </div> 
+            </div>   
                 <input type="submit" value="Submit" id="submit">
         </form>
     </section>

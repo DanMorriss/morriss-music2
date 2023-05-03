@@ -56,7 +56,7 @@ p, label {
 }
 
 body {
-  background-color: #F4F6F1;
+  background-color: #385B4F;
   
 }
 
@@ -72,9 +72,20 @@ header {
     justify-content: space-around;
 }
 
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Cinzel', serif;
+}
+
+#navbar a:hover {
+  border-bottom: 2px solid #223B33;
+}
+
 .logo {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 
 }
 
@@ -194,7 +205,29 @@ body {
   translate: 0;
 }
 
+/* About section */
+
+.info-box {
+  border-radius: 10px ;
+  background-color: #F4F6F1;
+  margin: 50px;
+  padding: 15px;
+  box-shadow: 1px 1px 40px #7A9B7F;
+}
+
 /* Contact Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 /* Web Dev Simplified for color change
 https://www.youtube.com/watch?v=K6CWjkDgQnE */
