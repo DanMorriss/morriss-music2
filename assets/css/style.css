@@ -4,6 +4,14 @@ font-family: 'Fauna One', serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fauna+One&display=swap');
 
+/* colors from https://mycolor.space/?hex=%2366C99F&sub=1
+#66C99F
+#42AF9D
+#2C9595
+#297A87
+#2E6172
+#2F4858
+*/
 /* CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/
   1. Use a more-intuitive box-sizing model. */
 *, *::before, *::after {
@@ -52,10 +60,8 @@ p, label {
 
 /*nav bar */
 header {
-    background-color: 
-    #a5b494;
-    padding: 10px;
-    box-shadow: 0 0 50px black;
+  background-image: linear-gradient(to right top, #66c99f, #5cc39f, #53bc9f, #4ab69e, #42af9d);
+  box-shadow: 0 0 50px black;
 }
 
 #navbar ul {
