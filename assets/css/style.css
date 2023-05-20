@@ -30,9 +30,10 @@ p, label {
     color: #223B33;
 }
 
-main {
+.section {
   width: min(70ch, 100% - 4rem);
   margin-inline: auto;
+  padding-bottom: 2rem;
 }
 
 
@@ -147,7 +148,7 @@ body {
 .info-box {
   padding-top: 3rem;
 }
-.about-dan {
+.about-card {
   background-color: #f4f6f1;
   padding: 1rem 2rem;
   border-radius: 1rem;
@@ -165,9 +166,24 @@ body {
   box-shadow: 0 0 10px 1px #223B33;
   margin: 1rem;
 }
+
+.photo-square {
+  max-height: 250px;
+}
 /* lessons */
 
+/* get this to spread across the whole page */
 .lesson-image {
   background-size: cover;
   background-position: center;
+}
+
+.lesson-box {
+  display: flex;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+.lesson-box:nth-child(even) {
+  flex-direction: row-reverse;
 }
