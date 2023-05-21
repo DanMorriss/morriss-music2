@@ -149,6 +149,10 @@ body {
   padding-top: 3rem;
 }
 
+.hide {
+  display: none;
+}
+
 .about-dan {
   background-color: #f4f6f1;
   padding: 1rem 2rem;
@@ -229,4 +233,30 @@ body {
   flex-direction: column;
   align-items: flex-end;
   margin-right: 20%;
+}
+
+.form-question {
+  padding-bottom: .5rem;
+}
+
+.consent {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+#gdpr {
+  margin: 1rem;
+}
+
+.consent label {
+  font-size: .9rem;
+}
+
+#submit {
+  background-color: #223B33;
+  color: #F4F6F1;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  float: right;
 }
