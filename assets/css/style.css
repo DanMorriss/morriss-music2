@@ -147,10 +147,17 @@ body {
 
 .info-box {
   padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hide {
   display: none;
+}
+
+#dan-image:hover {
+  box-shadow: 0 0 20px 1px #223B33;
 }
 
 .about-dan {
@@ -159,6 +166,14 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0 10px 1px #223B33;
   display: inline-block;
+}
+
+#dan-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:fit-content;
 }
 
 .about-card {
