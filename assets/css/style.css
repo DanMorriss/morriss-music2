@@ -42,55 +42,23 @@ img, svg, video {
   display: block;
 }
 
-/* hamburger navbar */
 
-.menu-toggle {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
+
+/*nav header */
 
 .navbar {
+  width: 100vw;
   display: flex;
-  align-items: center;
+
 }
 
-.menu-btn {
-  display: block;
-  cursor: pointer;
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-
-.hamburger {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #f4f6f1;
-  margin: 6px;
+#menu-toggle {
+  display: none;
 }
 
 .menu {
-  display: none;
-  list-style: none;
-  padding: 0;
+  width: 100vw;
 }
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #f4f6f1;
-}
-
-#menu-toggle:checked ~ .menu {
-  display: flex;
-
-}
-
-/*header */
 
 header {
   background-color: transparent;
@@ -98,7 +66,8 @@ header {
 }
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0 5%;
 }
 .nav a {
   text-decoration: none;
@@ -140,14 +109,6 @@ header {
   border-radius: 1rem;
   box-shadow: 0 0 10px 1px #223B33;
   display: inline-block;
-}
-
-#dan-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width:fit-content;
 }
 
 .about-card {
@@ -250,13 +211,17 @@ header {
   float: right;
 }
 
-/* media queries for 600px and below */
+/* media queries for 700px and below */
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
 
   .nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem 1rem 0;
+    border-radius: 0 10px 10px 0;
   }
   
   .navbar {
@@ -266,7 +231,7 @@ header {
   }
   
   .nav a:hover {
-    padding: .5rem;
+    /* padding: .5rem; */
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0 0 10px 1px #f4f6f1;
   }
@@ -282,4 +247,49 @@ header {
     flex-direction: column;
   }
   
+  /* hamburger navbar */
+
+.menu-toggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.menu-btn {
+  display: block;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  width: 30px;
+  height: 3px;
+  background-color: #f4f6f1;
+  margin: 6px;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f4f6f1;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: flex;
+
+}
   }
