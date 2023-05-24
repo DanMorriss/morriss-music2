@@ -68,7 +68,6 @@ img, svg, video {
   height: 3px;
   background-color: #f4f6f1;
   margin: 6px;
-  transition: transform 1s ease-in-out;
 }
 
 .menu {
@@ -88,6 +87,7 @@ img, svg, video {
 
 #menu-toggle:checked ~ .menu {
   display: flex;
+
 }
 
 /*header */
@@ -117,32 +117,6 @@ header {
 .hero {
   background-size: cover;
   background-position: center;
-}
-
-/* media queries for 600px and below */
-
-@media (max-width: 650px) {
-
-.nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.nav a:hover {
-  padding: .5rem;
-  border-radius: 0 1rem 1rem 0;
-  box-shadow: 0 0 10px 1px #f4f6f1;
-}
-
-body {
-  font-size: 1rem;
-}
 }
 
 .info-box {
@@ -275,3 +249,37 @@ body {
   padding: 0 1rem;
   float: right;
 }
+
+/* media queries for 600px and below */
+
+@media (max-width: 650px) {
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav a:hover {
+    padding: .5rem;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0 0 10px 1px #f4f6f1;
+  }
+  
+  body {
+    font-size: 1rem;
+  }
+  
+  .lesson-box {
+    flex-direction: column;
+  }
+  .lesson-box:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  }
