@@ -19,6 +19,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.5;
   text-align: justify;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, button {
     font-family: 'Cinzel', serif;
@@ -153,6 +154,41 @@ header {
 
 .lesson-box:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /*contact form */
