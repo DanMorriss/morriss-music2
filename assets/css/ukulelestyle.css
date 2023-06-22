@@ -22,11 +22,16 @@ h1 {
 
 header {
     height: 4.5rem;
-    background-color: #223b335e;
+
     position: absolute;
     left: 0;
     top: 0;
     padding-top: 1rem;
+}
+
+.nav {
+    justify-content: flex-start;
+    padding-left: 1rem;
 }
 
 .menu-btn {
