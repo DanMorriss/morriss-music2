@@ -27,3 +27,12 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+//Toggle lesson containers
+const lessonHeading = document.getElementsByClassName('course-section-header');
+const lessonList = document.getElementsByClassName('course-lessons-list');
+for (let i = 0; i < 6; i++) {
+    lessonHeading[i].addEventListener('click', function(e) {
+      lessonList[i].classList.toggle('hide');
+  });
+  }

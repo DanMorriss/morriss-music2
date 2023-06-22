@@ -1,0 +1,139 @@
+/*Global*/
+ul {
+    list-style: none;
+}
+
+p {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding-bottom: 2rem;
+  }
+h1 {
+    margin-top: 5rem;
+}
+
+/*Header*/
+
+header {
+    height: 4.5rem;
+    background-color: #223b3350;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 1rem;
+}
+
+.menu-btn {
+    margin-top: 0;
+}
+
+/*Course Containers*/
+.course-section-header {
+    box-shadow: 0 0 10px 1px #223B33;
+    background-color: #F4F6F1;
+    border-radius: 1rem;
+    margin: 2rem 2rem 0 2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.course-lessons-list {
+    border-radius: 1rem;
+    margin: 0 2rem 2rem 2rem;
+    background-color: #385B4F;
+    color: #F4F6F1;
+    padding: 1rem;
+    margin-top: -2rem;
+    box-shadow: 0 0 5px 0 #223B33;
+    transition: ease 1s;
+}
+.course-lessons-list a {
+    text-decoration: none;
+    color: #F4F6F1;
+    line-height: 4rem;
+    transition: ease .4s;
+    /*padding-left: 20vw; for media query larger screen*/
+}
+.course-lessons-list a:hover {
+    font-size: 1.6rem;
+}
+
+h3, h2 {
+    transition: ease .5s;
+    margin: 0;
+    padding: 1rem;
+}
+
+h2:hover {
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+h3:hover {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+.hide {
+    opacity: 0;
+    height: 0;
+    transition: opacity 1s ease, height 1s ease;
+    overflow: hidden;
+}
+
+/*Buttons*/
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #F4F6F1;
+    color: #223B33;
+    border-radius: .6rem;
+    padding: 0 2rem;
+    margin: .5rem;
+    border: 1px solid #223B33;
+    font-family: 'Cinzel', serif;
+}
+a.button:hover {
+    box-shadow: 0 0 7px 1px #385B4F;
+}
+
+.navigation-buttons-container {
+    display: flex;
+    justify-content: center;
+}
+.navigation-buttons-container a {
+    width: 14rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.downloads-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.downloads-container a {
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Video*/
+.video-container {
+    display: flex;
+    justify-content: center;
+}

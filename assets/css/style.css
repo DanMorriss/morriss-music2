@@ -20,11 +20,13 @@ body {
   line-height: 1.5;
   text-align: justify;
   overflow-x: hidden;
+  margin: 0;
 }
 h1, h2, h3, h4, h5, button {
     font-family: 'Cinzel', serif;
     color: #223B33;
     text-align: center;
+    text-wrap: balance;
 }
 p, label {
     font-family: 'Fauna One', serif;
@@ -70,6 +72,7 @@ header {
   justify-content: space-around;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 .nav a {
   text-decoration: none;
@@ -98,11 +101,10 @@ header {
 }
 
 .hide {
-  display: none;
-}
-
-#dan-image:hover {
-  box-shadow: 0 0 20px 1px #223B33;
+  opacity: 0;
+    height: 0;
+    transition: opacity 0.4s ease, height 0.4s ease;
+    overflow: hidden;
 }
 
 .about-dan {
@@ -110,7 +112,6 @@ header {
   padding: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px 1px #223B33;
-  display: inline-block;
 }
 
 .about-card {
@@ -192,6 +193,22 @@ header {
   opacity: 1;
 }
 
+.lesson-button {
+  text-decoration: none;
+    background-color:#385B4F;
+    color: #F4F6F1;
+    border-radius: .6rem;
+    padding: 0 2rem;
+    margin: .5rem;
+    border: 1px solid #223B33;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    padding: .5rem;
+}
+.lesson-button:hover {
+  box-shadow: 0 0 7px 1px #385B4F;
+}
+
 /*contact form */
 
 .contact-box {
@@ -246,6 +263,27 @@ header {
   border-radius: 1rem;
   padding: 0 1rem;
   float: right;
+}
+
+/*Academy page*/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.6rem;
+  transition: ease .4s;
+}
+
+a img:hover {
+  box-shadow: 0 0 20px 1px #223B33;
+  transition: ease .4s;
+}
+
+.academy-hero {
+  background-size: cover;
+  background-position: center;
 }
 
 /* media queries for 700px and below */
