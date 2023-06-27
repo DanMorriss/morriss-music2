@@ -265,6 +265,27 @@ header {
   float: right;
 }
 
+/*Footer*/
+
+#social-icons, #policies {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#policies a {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#social-icons a {
+  color: #223B33;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+
+
 /*Academy page*/
 
 a {

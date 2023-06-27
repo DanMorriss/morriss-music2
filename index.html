@@ -28,6 +28,7 @@
             </div>
         </nav>
     </header>
+
     <div class="hero">
         <img src="assets/images/hero-image.png" alt="image of a backpack full of sheet music"> 
     </div>
@@ -41,6 +42,7 @@
             <p>Unlock your musical potential today - schedule your Zoom lessons now!</p>
         </section>
     </div>
+
     <div>
         <img id="lessons" class="lesson-image" src="assets/images/online-lessons.png" alt="Image of online ukulele lesson">
     </div>
@@ -100,6 +102,7 @@
                 </div>
             </div>
         </section>
+
         <div class="about-dan">
             <h2>About Daniel Morriss</h2>
             <img  id="dan-image" class="photo photo-avatar" src="assets/images/dan-avatar1.png" alt="Dan playing the Mandolin">
@@ -111,49 +114,80 @@
             </div>
         </div>
     </div>
-        <section class="contact-box" id="contact">
-            <div class="contact-div">
-                <h2>Contact</h2>
-                <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
-                <form action="https://formsubmit.co/37ea1fde9e4fe78c58aad677bd73801d" method="POST">
-                    <input type="hidden" name="_next" value="thanks.html">
-                    <input type="hidden" name="_subject" value="New lesson inquiry!">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="questions">
-                        <div class="form-question">
-                            <label for="fname">First Name:</label>
-                            <input type="text" id="fname" name="fname" minlength="3" required>
-                        </div>
-                        <div class="form-question">
-                            <label for="lname">Last Name:</label>
-                            <input type="text" id="lname" name="lname" required>
-                        </div>
-                        <div class="form-question">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-question">
-                            <label for="instrument">Instrument:</label>
-                            <input type="instrument" id="instrument" name="instrument" required>
-                        </div>
-                        <div class="form-question">
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-question">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                    </div>    
-                    <div class="consent">
-                        <label for="gdpr"><em>I consent to having this website store my submitted information so they can respond to my enquiry.</em></label>
-                        <input type="checkbox" id="gdpr" name="gdpr" required>
-                    </div>  
-                    <input type="submit" value="Submit" id="submit">
-                </form>
-            </div>
-        </section>
+
+    <section class="contact-box" id="contact">
+        <div class="contact-div">
+            <h2>Contact</h2>
+            <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
+            <form action="https://formsubmit.co/37ea1fde9e4fe78c58aad677bd73801d" method="POST">
+                <input type="hidden" name="_next" value="thanks.html">
+                <input type="hidden" name="_subject" value="New lesson inquiry!">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="questions">
+                    <div class="form-question">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" minlength="3" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="instrument">Instrument:</label>
+                        <input type="instrument" id="instrument" name="instrument" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                </div>    
+                <div class="consent">
+                    <label for="gdpr"><em>I consent to having this website store my submitted information so they can respond to my enquiry.</em></label>
+                    <input type="checkbox" id="gdpr" name="gdpr" required>
+                </div>  
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul id="policies">
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Cancellation Policy</a>
+                </li>
+            </ul>
+            <ul id="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/morrissmusic" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                        <!-- font awesome icon -->
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/danielmorrissbass" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                        <!-- font awesome icon -->
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="assets/js/script.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/076967cb18.js" crossorigin="anonymous"></script>
     <!--bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
