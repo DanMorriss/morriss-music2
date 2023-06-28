@@ -267,6 +267,9 @@ header {
 
 /*Footer*/
 
+footer {
+  background-color: #B1D8B7;
+}
 #social-icons, #policies {
   display: flex;
   justify-content: center;
@@ -305,6 +308,20 @@ a img:hover {
 .academy-hero {
   background-size: cover;
   background-position: center;
+}
+
+/*Sheet Music Pages*/
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  padding: 1rem;
 }
 
 /* media queries for 700px and below */
