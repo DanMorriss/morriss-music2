@@ -326,6 +326,14 @@ a img:hover {
   padding: 1rem;
 }
 
+.download-btn {
+  margin:.8em auto ;
+  background-color: #B1D8B7;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow:  0 0 10px 1px #223B33;
+}
+
 /* media queries for 700px and below */
 
 @media (max-width: 700px) {
