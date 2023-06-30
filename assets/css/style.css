@@ -334,6 +334,7 @@ a img:hover {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow:  0 0 10px 1px #223B33;
+  transition: ease, 0.4s;
 }
 
 /* media queries for 700px and below */
