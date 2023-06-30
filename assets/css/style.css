@@ -102,13 +102,6 @@ header {
   align-items: center;
 }
 
-.hide {
-  opacity: 0;
-    height: 0;
-    transition: opacity 0.4s ease, height 0.4s ease;
-    overflow: hidden;
-}
-
 .about-dan {
   background-color: #f4f6f1;
   padding: 1rem 2rem;
@@ -311,6 +304,50 @@ a img:hover {
   background-size: cover;
   background-position: center;
 }
+/*Sheet Music Homepage*/
+
+
+
+.dropdown-header {
+  box-shadow: 0 0 10px 1px #223B33;
+  background-color: #F4F6F1;
+  border-radius: 1rem;
+  margin: 2rem 2rem 0 2rem;
+  padding: 1rem;
+  z-index: 10;
+  position: relative;
+  transition: ease .5s;
+
+}
+
+.dropdown-header:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 1px #223B33;
+  transform: scale(1.01);
+}
+
+.dropdown-content {
+  border-radius: 1rem;
+  margin: 0 2rem 2rem 2rem;
+  background-color: #385B4F;
+  color: #F4F6F1;
+  padding: 1rem;
+  margin-top: -2rem;
+  box-shadow: 0 0 5px 0 #223B33;
+  transition: ease 1s;
+  text-align: center;
+}
+
+.dropdown-content li {
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #F4F6F1;
+  line-height: 4rem;
+  transition: ease .4s;
+}
 
 /*Sheet Music Pages*/
 
@@ -419,3 +456,10 @@ a img:hover {
 
 }
   }
+
+.hide {
+  opacity: 0;
+  height: 0;
+  transition: opacity 1s ease, height 1s ease;
+  overflow: hidden;
+}
