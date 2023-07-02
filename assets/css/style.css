@@ -45,48 +45,70 @@ img, svg, video {
   display: block;
 }
 
-
-
 /*nav header */
 
-.navbar {
-  width: 100vw;
+#hamburger {
+  position: fixed;
   display: flex;
-
+  flex-direction: column;
+  justify-content: space-around;
+  left: 1rem;
+  top:.5rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 3;
 }
-
-#menu-toggle {
-  display: none;
+#hamburger:hover {
+  cursor: pointer;
+}
+.hamburger {
+  display: block;
+  height: .4rem;
+  width: 100%;
+  background-color: #223B33;
+  box-shadow: 0 0 6px .5px #f4f6f1;
+  z-index: 3;
+  border-radius: .5rem;
 }
 
 .menu {
+  position: fixed;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.1);
-  
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 
-header {
-  background-color: transparent;
-  position: absolute;
-}
 .nav {
-  display: flex;
+  display: none;
+  flex-direction: column;
   justify-content: space-around;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  text-align: center;
+  width: 100%;
 }
 .nav a {
   text-decoration: none;
   color: #f4f6f1;
-  border: transparent solid 1px;
+  padding: 1.5rem;
+}
+.nav li {
   padding: 1rem;
 }
-
 .nav a:hover {
-  padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
-  box-shadow: 0 0 10px 1px #f4f6f1;
+  font-size: 1.5rem;
+}
+.nav li:hover {
+  background-color: #223B33;
+  
+}
+.active {
+  display: flex;
+  transition: all ease .4s;
+  height: 20rem;
 }
 
 /* hero image */
@@ -264,11 +286,13 @@ header {
 
 footer {
   background-color: #B1D8B7;
+  margin: 0;
 }
 #social-icons, #policies {
   display: flex;
   justify-content: center;
   list-style: none;
+  
 }
 
 #policies a {
@@ -281,8 +305,6 @@ footer {
   font-size: 3rem;
   padding: 1rem;
 }
-
-
 
 /*Academy page*/
 
@@ -304,9 +326,8 @@ a img:hover {
   background-size: cover;
   background-position: center;
 }
+
 /*Sheet Music Homepage*/
-
-
 
 .dropdown-header {
   box-shadow: 0 0 10px 1px #223B33;
@@ -317,7 +338,6 @@ a img:hover {
   z-index: 10;
   position: relative;
   transition: ease .5s;
-
 }
 
 .dropdown-header:hover {
@@ -409,53 +429,7 @@ a img:hover {
   .lesson-box:nth-child(even) {
     flex-direction: column;
   }
-  
-  /* hamburger navbar */
-
-.menu-toggle {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
 }
-
-.menu-btn {
-  display: block;
-  cursor: pointer;
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-
-.hamburger {
-  display: block;
-  position: relative;
-  left: 5px;
-  top: 5px;
-  width: 30px;
-  height: 3px;
-  background-color: #f4f6f1;
-  margin: 6px;
-}
-
-.menu {
-  display: none;
-  list-style: none;
-  padding: 0;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #f4f6f1;
-}
-
-#menu-toggle:checked ~ .menu {
-  display: flex;
-
-}
-  }
 
 .hide {
   opacity: 0;

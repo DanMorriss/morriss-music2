@@ -1,3 +1,12 @@
+//Hamburger Menu
+
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementsByClassName('nav')[0];
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle('active');
+});
+
 //fade and slide in Intersection Observer
 //from Kevin Powell
 // https://www.youtube.com/watch?v=huVJW23JHKQ
