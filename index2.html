@@ -232,25 +232,139 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <ul class="" id="policies">
-                <li class="">
-                    <a href="#">Privacy Policy</a>
+    <footer class="bg-dark text-white p-3">
+        <div class="container text-center">
+            <!--Policies-->
+            <ul class="list-inline" id="policies">
+                <li class="list-inline-item p-3" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#">Cancellation Policy</a>
+
+                <li class="list-inline-item p-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#cancellationModal">Cancellation Policy</a>
                 </li>
             </ul>
-            <ul id="social-icons">
-                <li>
-                    <a href="https://www.facebook.com/morrissmusic" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+
+            <!--Privacy Policies Modal-->
+            <div class="modal fade text-black" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title fs-5">Privacy Policy</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="h4">When do you collect data about me?</p>
+                            <p>We collect data from you when you use our website or forms to make an enquiry.</p>
+                            <p class="h4">Personal Information:</p>
+                            <p>When you make an enquiry we collect certain personal information about you, to enable us to to respond to you in an appropriate and timely manner. Information collected via the website is limited to your name, telephone contact and email address.</p>
+                            <p>As a customer we may hold imagery of you for which we will have obtained prior written consent from you. These images may be used on our website, Facebook page and/or any marketing materials we issue. Any images of students will only be retained by us for as long as they are a student with us.</p>
+                            <p class="h4">Analytical Information:</p>
+                            <p>Analytical website software used to better understand the trends of our customers; this helps us improve the layout and relevance of the website for your benefit. See “Cookies Policy” for more information.</p>
+                            <p class="h4">What do you do with my personal information?</p>
+                            <p>We use your contact details to communicate with you in order to respond to your enquiry.</p>
+                            <p>Your data may also be used for administrative and accounting purposes and to help us in any future dealings with you, for example by identifying your requirements.</p>
+                            <p>There may be instances where it may be necessary for us to communicate with you, for administrative or operational reasons relating, for example, to advise you of changes in lesson times.</p>
+                            <p>The information you provide to us will be held in our systems, which are located on our premises or those of an appointed third party.</p>
+                            
+                            <p class="h4">Do you sell my information to third parties</p>
+                            <p>We do not sell your information to third parties. Please see “disclosure to third parties” below for more information.</p>
+                            
+                            <p>Site Tracking</p>
+                            <p>We use tracking software to monitor customer traffic patterns and site usage to help us develop the design and layout of the site to better meet the needs of visitors to our website. This software does not enable us to capture any personally identifying information.</p>
+                            <p>In addition to the information which you may volunteer to us, some information is automatically collected when you visit our website via tracking technologies employed by us such as cookies, flash cookies, web bugs, javascript. These technologies collect technical information from your computer such as your Internet protocol (IP) address, your operating system and platform, browser type and version and referrer website whenever you visit our website.</p>
+
+                            <p class="h4">Security to protect your information</p>
+                            <p>When you make an enquiry or enter personally identifying information your details are transmitted across the internet securely using high-grade encryption (256 bit).In addition, as required by the (“GDPR”) General Data Protection Regulation, we follow strict security procedures in the storage and disclosure of information which you have given us, to prevent unauthorised access</p>
+                            <p>We will retain your information for a reasonable period or as long as the law requires. This does not include the retention of any personal imagery which will be destroyed upon cessation of lessons with Morriss Music (see “Personal Information”, above).</p>
+                            <p>To help us keep our databases up to date, please let us know as soon as your contact details change or if you notice any inaccuracies in them</p>
+
+                            <p class="h4">Cookies</p>
+                            <p>This site uses cookies – small text files that are placed on your machine to help the site provide a better user experience. In general, cookies are used to retain user preferences, store information for things like shopping baskets, and provide anonymised tracking data to third party applications like Google Analytics. Our cookies do not contain any personally identifying information. As a rule, cookies will make your browsing experience better. However, you may prefer to disable cookies on this site and on others. The most effective way to do this is to disable cookies in your browser. We suggest consulting the Help section of your browser or taking a look at the About Cookies website which offers guidance for all modern browsers</p>
+                            
+                            <p class="h4">Disclosure to third parties</p>
+                            <p>Morriss Music will not use your personal information for any purpose other than in connection with our services in accordance with our privacy policy, or supply it to any third party unless required in order to provide our services to you or to protect you or MHVS from fraud or theft.
+
+                            <p>For your convenience and information Morriss Music may provide links to other websites. These sites may have different security and privacy policies that we have no control over and we take no responsibility for any information contained in these sites.</p>
+                                
+                            <p>Such third party websites may contain privacy policies that differ from that of Morriss Music and we encourage you to review and understand their privacy policies before providing them with information.</p>
+                            
+                            <p class="h4">Your Consent</p>
+                            <p>By using our services and by accessing our website, you are consenting to the collection and use of the information described above in our Privacy Policy, as modified from time to time by us.
+
+                            <p>If you have any further questions about our Privacy Policy or its implementation, or if you would like to ask us about the information we are holding about you, please email us at daniel@morrissmusic.co.uk</p>
+                                
+                            <p>If we change our Privacy Policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it and in what circumstances we disclose it.</p>
+                            
+                            <p class="h4">Disclaimer</p>
+                            
+                            <p>Information on this site is posted in good faith and updated regularly, but Morriss Music cannot guarantee its completeness and accuracy. Morriss Music does not accept any liability to you or any third party for any error or omission on this site. Morriss Music may change, update or delete the terms and conditions or any information on this site without prior notice.</p>
+
+                            <p>Morriss Music does not warrant that this site will be uninterrupted, error free or that any information or other material accessible from this site is free of viruses or other harmful components.</p>
+
+                            <p>Morriss Music is not liable for any direct or indirect loss resulting from your use of the information on this site.</p>
+
+                            <p class="h4">Intellectual property</p>
+                            The Morriss Music name, logo and all related product and service names, design marks and slogans are the trademarks or service marks of Morriss Music. All other names, logos and all related product and service names, design marks and slogans used on this site are the trademarks or service marks of their owners. All rights are acknowledged.</p>
+
+                            <p>The copyright in all teaching material, slides, photographs, images, maps, travel information and other material on this site rests with Morriss Music or its suppliers, unless explicitly stated otherwise. Your access to the material and products or services available through this website does not give you a licence to modify, display, license, transfer, sell, reproduce, distribute or otherwise use any material (including data).</p>
+
+                            <p>You may link to the home page of this site, but may not:</p>
+                            <ul>
+                            <li>deep-link or use frames to limit the complete and full intended use of this site;</li>
+
+                            <li>bypass or circumvent any measures employed by Morriss Music to limit such deep linking or use of frames;</li>
+
+                            <li>impose, in Morriss Music’s opinion, an unreasonable or disproportionately large load on this website;</li>
+
+                            <li>use any robot, spider, scraper or other automated means or manual process to access, monitor or copy any material on this website; or</li>
+
+                            <li>>you may not use in any way these rights or other intellectual property rights in material relating to this website without the prior written consent of Morriss Music.</li>
+                            </ul>
+                            <p class="h4">Applicable law and jurisdiction</p>
+                            These site terms shall be governed by English law. Any disputes involving this site shall be subject to the jurisdiction of the English courts.</p>
+
+                            <p class="h4">No unlawful or prohibited use</p>
+                            As a condition of your use of this site you warrant to Morriss Music that you will not use this site for any purpose that is unlawful or prohibited by these terms, conditions and notices.</p>
+
+                            <p>All rights reserved. No part of this website or data contained within it may be reproduced in any form without permission of the copyright owner.</p>
+
+                            <p>Warning: the doing of an unauthorised act in relation to a copyright work may result in both a civil claim for damages and criminal prosecution.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cancellation Policiy Modal-->
+            <div class="modal fade text-black" id="cancellationModal" tabindex="-1" aria-labelledby="cancellationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title fs-5">Cancellation Policy</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="h4">If you can’t attend a lesson</p>
+                            <p>If you can’t make your lesson let me know 24 hours in advance so we can rearrange another time that works for both of us. You will be charged the full lesson price for missing a lesson with less than 24 hours notice. </p>
+                            <p class="h4">If I can’t attend a Lesson</p>
+                            <p>If I have to cancel a lesson, I will endeavour to give you as much notice as possible and we can rearrange another time that works for both of us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Social Icons-->
+            <ul class="list-inline" id="social-icons">
+                <li class="list-inline-item p-3">
+                    <a class="display-3" href="https://www.facebook.com/morrissmusic" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
                         <!-- font awesome icon -->
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.youtube.com/danielmorrissbass" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+
+                <li class="list-inline-item p-3">
+                    <a class="display-3" href="https://www.youtube.com/danielmorrissbass" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
                         <!-- font awesome icon -->
                         <i class="fa-brands fa-youtube"></i>
                     </a>
