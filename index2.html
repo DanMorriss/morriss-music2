@@ -13,38 +13,48 @@
 </head>
 <body>
     <header>
+        <!--Navbar-->
         <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Morriss Music</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarBasic">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0 d-flex">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#lessons">Lessons</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about-dan">About Dan</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="academy.html">Academy</a>
-                  </li>
-                </ul>
-              </div>
+                <!--Hamburger Button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Navigation Items-->
+                <div class="collapse navbar-collapse" id="navbarBasic">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0 d-flex">
+                        <!--Home-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                        </li>
+                        <!--Lessons-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lessons">Lessons</a>
+                        </li>
+                        <!--About Dan-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-dan">About Dan</a>
+                        </li>
+                        <!--Contact-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <!--Academy-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="academy.html">Academy</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
+    <!--About Section-->
     <img class="img-fluid" src="assets/images/hero-image.png" alt="image of a backpack full of sheet music"> 
+    
     <div class="container">
-        <h1 class="d-flex justify-content-center">Morriss Music</h1>
+        <h1 class="text-center p-4">Morriss Music</h1>
         <p>Join me, Daniel Morriss LLCM (TD), an RGT registered tutor, for professional guitar, bass, and ukulele lessons.</p>
         <p>I offer Zoom lessons for all ages and skill levels. Enhance your skills, start a new musical journey, or provide enriching music lessons for your children.</p>
         <p>Login to the Academy to access customized worksheets, backing tracks, and instructional videos to help you play your favorite songs and improve between lessons. </p>
@@ -52,150 +62,149 @@
         <p>Unlock your musical potential today - schedule your Zoom lessons now!</p>
     </div>
 
+    <!--Lessons Section-->
     <img id="lessons" class="img-fluid" src="assets/images/online-lessons.png" alt="Image of online ukulele lesson">
     <div class="container">
-        <div class="container">
-            <h2 class="d-flex justify-content-center">Online Lessons</h2>
-            <p>Beginner to advanced Guitar, Bass and Ukulele lessons in music and music theory  covering everthing you need to improve your playing and covering styles including Rock, Pop, Blues, Funk, Jazz, Metal, Fingerstyle & Classical</p>
+        <h2 class="text-center p-4">Online Lessons</h2>
+        <p>Beginner to advanced Guitar, Bass and Ukulele lessons in music and music theory  covering everthing you need to improve your playing and covering styles including Rock, Pop, Blues, Funk, Jazz, Metal, Fingerstyle & Classical</p>
 
-            <div class="d-flex flex-wrap container">
+        <div class="d-flex flex-wrap container">
 
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/guitar-lessons.png" alt="image of an acoustic guitar player">
-                        <div class="card-body" id="acousic-info">
-                            <h3 class="card-title text-center">Acoustic Guitar</h5>
-                            <p class="card-text">If you want to strum along with your favourite songs, perform at an open mic or work your way though the RGT acoustic guitar grades* I will be able to help you grow as a musician and learn to love the guitar.</p>
-                            <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                            </div>
+            <!--Acoustic Guitar-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/guitar-lessons.png" alt="image of an acoustic guitar player">
+                    <div class="card-body" id="acousic-info">
+                        <h3 class="card-title text-center">Acoustic Guitar</h5>
+                        <p class="card-text">If you want to strum along with your favourite songs, perform at an open mic or work your way though the RGT acoustic guitar grades* I will be able to help you grow as a musician and learn to love the guitar.</p>
+                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/electric-lessons.png" alt="image of an electric guitar player">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Electric Guitar</h5>
-                            <p class="card-text">Want to be able to jam along to some backing tracks at home or lead your own band? I can help you improve your musical vocabulary with songs and licks that you’ll be able to play at home, with friends or at gigs. You will also have the opportunity to work your way through the Rockschool Grades for extra UCAS points*.</p>
-                            <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                            </div>
+            <!--Electric Guitar-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/electric-lessons.png" alt="image of an electric guitar player">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Electric Guitar</h5>
+                        <p class="card-text">Want to be able to jam along to some backing tracks at home or lead your own band? I can help you improve your musical vocabulary with songs and licks that you’ll be able to play at home, with friends or at gigs. You will also have the opportunity to work your way through the Rockschool Grades for extra UCAS points*.</p>
+                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/classical-lessons.png" alt="image of a classical guitar player">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Classical Guitar</h5>
-                            <p class="card-text">The classical guitar is a good introduction to the guitar and an excellent opportunity to learn to read. If your thinking of starting the guitar and want a good foundation I can help you grow a repertoire of pieces or we can work through the Trinity classical guitar grades*.</p>
-                            <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                            </div>
+            <!--Classical Guitar-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/classical-lessons.png" alt="image of a classical guitar player">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Classical Guitar</h5>
+                        <p class="card-text">The classical guitar is a good introduction to the guitar and an excellent opportunity to learn to read. If your thinking of starting the guitar and want a good foundation I can help you grow a repertoire of pieces or we can work through the Trinity classical guitar grades*.</p>
+                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/bass-lessons.png" alt="image of a bass player">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Bass Guitar</h3>
-                            <p class="card-text">Bass is the soul of a band, it makes you want to dance and drives the music along while keeping everyone together. As a session player with almost 20 years playing experience I can show you the way bass works in music, by learning some of the greatest ever bass lines and teaching you to lock in with a drummer.</p>
-                            <p class="card-text">We’ll use songs, backing tracks and jam together to make it as enjoyable as possible. You’ll be able to take the RGT bass guitar grades, so far all my students have achieved distinction at Grade 8*.</p>
-                            <aside aria-label="UCAS points clarification"><em>*Equivalent to an A level in UCAS points.</em></aside>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                            </div>
+            <!--Bass-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/bass-lessons.png" alt="image of a bass player">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Bass Guitar</h3>
+                        <p class="card-text">Bass is the soul of a band, it makes you want to dance and drives the music along while keeping everyone together. As a session player with almost 20 years playing experience I can show you the way bass works in music, by learning some of the greatest ever bass lines and teaching you to lock in with a drummer.</p>
+                        <p class="card-text">We’ll use songs, backing tracks and jam together to make it as enjoyable as possible. You’ll be able to take the RGT bass guitar grades, so far all my students have achieved distinction at Grade 8*.</p>
+                        <aside aria-label="UCAS points clarification"><em>*Equivalent to an A level in UCAS points.</em></aside>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                
-
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/ukulele-lessons.png" alt="image of a ukulele player">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Ukulele</h3>
-                            <p class="card-text">The ukulele is one of the easiest instruments to learn and a great gateway to many other instruments. Your first chord takes seconds to master and you’ll be strumming along to a song within half an hour.</p>
-                            <p class="card-text">Just because its easy to pick up doesn’t mean that we can’t push ourselves. I have a catalogue of songs specifically arranged for varying difficulty using a variety of techniques including strumming, finger-picking & percussive rhythm playing. All that can be played solo, with the record or as part of a group.</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                            </div>
+            <!--Ukulele-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/ukulele-lessons.png" alt="image of a ukulele player">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Ukulele</h3>
+                        <p class="card-text">The ukulele is one of the easiest instruments to learn and a great gateway to many other instruments. Your first chord takes seconds to master and you’ll be strumming along to a song within half an hour.</p>
+                        <p class="card-text">Just because its easy to pick up doesn’t mean that we can’t push ourselves. I have a catalogue of songs specifically arranged for varying difficulty using a variety of techniques including strumming, finger-picking & percussive rhythm playing. All that can be played solo, with the record or as part of a group.</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="container col-md-6 col-xl-4">
-                    <div class="card shadow m-3">
-                        <img class="card-img-top" src="assets/images/ukulele-confidence-avatar.png" alt="image of a ukulele player">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Online Courses</h3>
-                            <p class="card-text">Follow along at your own pace through the 6 week programme designed to improve all areas of your playing in a step-by-step way. Taking you through 6 songs with worksheets, backing tracks and video lessons.</p>
-                            <p class="card-text">By the end of this course, you'll have not only expanded your ukulele skills but also gained a deeper understanding of music as a whole. You'll be equipped to tackle a wide range of songs and even explore other instruments with confidence.</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary" href="/academy.html">Login to the Academy!</a>
-                            </div>
+            <!--Online Courses-->
+            <div class="container col-md-6 col-xl-4">
+                <div class="card shadow m-3">
+                    <img class="card-img-top" src="assets/images/ukulele-confidence-avatar.png" alt="image of a ukulele player">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Online Courses</h3>
+                        <p class="card-text">Follow along at your own pace through the 6 week programme designed to improve all areas of your playing in a step-by-step way. Taking you through 6 songs with worksheets, backing tracks and video lessons.</p>
+                        <p class="card-text">By the end of this course, you'll have not only expanded your ukulele skills but also gained a deeper understanding of music as a whole. You'll be equipped to tackle a wide range of songs and even explore other instruments with confidence.</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-primary" href="/academy.html">Login to the Academy!</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     
+    <!--About Dan Section-->
     <img id="about-dan" class="img-fluid" src="assets/images/danhero.png" alt="Dan playing the Bass">
     <div class="container">
-        <h2 class="d-flex justify-content-center">About Daniel Morriss</h2>
+        <h2 class="text-center p-4">About Daniel Morriss</h2>
         <p>Daniel first picked up the bass guitar at 13 and began lessons with legendary bass player Brian Gregg (Johnny Kidd and the Pirates, Bob Dylan, The Tornadoes). This cemented his love for making music and led him to study BTEC Music Performance and achieve Grade 8 in the bass and guitar.</p>
         <p>Playing in bands throughout school and college Daniel always enjoyed performing and started touring at 19, spending most of the next 10 years on the road. As a founding member of Echotape he had the chance to tour across Europe, America and Russia and has supported some of his childhood idols including The White Stripes, Queens of the Stone Age and Oceansize.</p>  
         <p>Daniel's songwriting talents have garnered recognition worldwide, with his compositions receiving airplay and television exposure across the globe. He has experienced the exhilaration of playing sold-out stadium gigs and gracing numerous festivals with his electrifying performances. However, amidst his successful career as a musician, Daniel discovered a newfound passion for teaching, leading him to become a Licentiate of the London College of Music for Guitar Tuition.</p>
         <p>Currently, Daniel imparts his expertise in electric guitar, acoustic guitar, classical guitar, bass guitar, and ukulele through one-on-one lessons and group sessions. Despite his focus on teaching, Daniel continues to indulge his musical spirit by performing on bass and guitar, collaborating with bands like Ruby Boots and Alibis. As a founding member and esteemed house bass player for the Newbury Jazz Platform, his musical journey continues to evolve and inspire.</p>
     </div>
 
-    <div id="contact" class="container card mb-3 shadow-lg">
+    <!--Contact Form-->
+    <div id="contact m-4" class="container card mb-3 shadow-lg">
             <h2 class="d-flex justify-content-center m-3">Contact</h2>
             <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
+        
         <div class="container">
             <form action="https://formsubmit.co/37ea1fde9e4fe78c58aad677bd73801d" method="POST">
                 <input type="hidden" name="_next" value="thanks.html">
                 <input type="hidden" name="_subject" value="New lesson inquiry!">
                 <input type="hidden" name="_captcha" value="false">
+                
                 <div class="questions row">
-                    
-
+                    <!--Name-->
                     <div class="form-floating col-6 mb-2">
-                        
                         <input class="form-control" type="text" id="fname" name="fname" minlength="3" placeholder="Harry" required>
                         <label class="form-label ms-2" for="fname">First Name</label>
                     </div>
                     <div class="form-floating col-6 mb-2">
-                        
                         <input class="form-control" type="text" id="lname" name="lname" placeholder="Potter" required>
                         <label class="form-label ms-2" for="lname">Last Name</label>
                     </div>
-
-
+                    <!--Email-->
                     <div class="form-floating mb-2">
-
                         <input class="form-control" type="email" id="email" name="email" placeholder="name@email.com" required>
                         <label class="form-label ms-2" for="email">Email:</label>
-                        
                     </div>
-
+                    <!--Phone-->
                     <div class="form-floating mb-2">
-                        
                         <input class="form-control" type="tel" id="phone" name="phone" placeholder="+44" required>
                         <label class="form-label ms-2" for="phone">Phone:</label>
                     </div>
-
+                    <!--Instrument-->
                     <div class="form-question mb-2">
                         <label class="form-label" for="instrument">Instrument:</label>
                         <select class="form-select" type="instrument" id="instrument" name="instrument" required>
@@ -204,17 +213,18 @@
                             <option>Ukulele</option>
                         </select>
                     </div>
-
+                    <!--Message-->
                     <div class="form-question mb-2">
                         <label class="form-label" for="message">Message:</label>
                         <textarea class="form-control" id="message" name="message" required></textarea>
                     </div>
-
-                </div>    
+                </div>
+                <!--GDPR Consect-->
                 <div class="consent">
                     <input type="checkbox" id="gdpr" name="gdpr" required>
                     <label class="form-label" for="gdpr"><em>I consent to having this website store my submitted information so they can respond to my enquiry.</em></label>
-                </div>  
+                </div>
+                <!--Submit Button-->
                 <div class="d-grid gap-2 col-3 mx-auto">
                     <input class="btn btn-primary mb-3" type="submit" value="Submit" id="submit">
                 </div>
@@ -223,12 +233,12 @@
     </div>
 
     <footer>
-        <div>
-            <ul id="policies">
-                <li>
+        <div class="container">
+            <ul class="" id="policies">
+                <li class="">
                     <a href="#">Privacy Policy</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#">Cancellation Policy</a>
                 </li>
             </ul>
