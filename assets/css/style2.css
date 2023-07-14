@@ -19,7 +19,12 @@ h1, h2, h3, h4, h5 {
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 992px) {
+#navigation {
+  width: 100%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1199px) {
   #navigation a:hover {
     transform: scale(0.96);
   }
