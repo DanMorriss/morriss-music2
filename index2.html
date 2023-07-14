@@ -7,366 +7,175 @@
     <title>Morriss Music</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!--Stylesheet-->
-    <link href="assets/css/style2.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
-            
-            <div class="container-fluid">
-                <!--Hamburger Button-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Navigation Items-->
-                <div class="collapse navbar-collapse" id="navbarBasic">
-                    <ul class="navbar-nav me-auto mb-2 mb-xl-0 d-flex" id="navigation">
-                        <!--Home-->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">Home</a>
-                        </li>
-                        <!--Lessons-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#lessons">Lessons</a>
-                        </li>
-                        <!--About Dan-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-dan">About Dan</a>
-                        </li>
-                        <!--Contact-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <!--Academy-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="academy.html">Academy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <div id="hamburger">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="academy.html">Academy</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <!--About Section-->
-    <img class="img-fluid" src="assets/images/hero-image.png" alt="image of a backpack full of sheet music"> 
-    
-    <div class="container">
-        <h1 class="text-center p-4">Morriss Music</h1>
-        <p>Join me, Daniel Morriss LLCM (TD), an RGT registered tutor, for professional guitar, bass, and ukulele lessons.</p>
-        <p>I offer Zoom lessons for all ages and skill levels. Enhance your skills, start a new musical journey, or provide enriching music lessons for your children.</p>
-        <p>Login to the Academy to access customized worksheets, backing tracks, and instructional videos to help you play your favorite songs and improve between lessons. </p>
-        <p>Jam with friends, play along to recordings, and showcase your solo performances. Prepare for The RGT & Trinity exams to earn UCAS points and boost your university prospects.</p>
-        <p>Unlock your musical potential today - schedule your Zoom lessons now!</p>
+    <div class="hero">
+        <img src="assets/images/hero-image.png" alt="image of a backpack full of sheet music"> 
+    </div>
+    <div class="section" id="about">
+        <section class="info-box">
+            <h1>Morriss Music</h1>
+            <p>Join me, Daniel Morriss LLCM (TD), an RGT registered tutor, for professional guitar, bass, and ukulele lessons.</p>
+            <p>I offer Zoom lessons for all ages and skill levels. Enhance your skills, start a new musical journey, or provide enriching music lessons for your children.</p>
+            <p>Login to the Academy to access customized worksheets, backing tracks, and instructional videos to help you play your favorite songs and improve between lessons. </p>
+            <p>Jam with friends, play along to recordings, and showcase your solo performances. Prepare for The RGT & Trinity exams to earn UCAS points and boost your university prospects.</p>
+            <p>Unlock your musical potential today - schedule your Zoom lessons now!</p>
+        </section>
     </div>
 
-    <!--Lessons Section-->
-    <img id="lessons" class="img-fluid" src="assets/images/online-lessons.png" alt="Image of online ukulele lesson">
-    <div class="container">
-        <h2 class="text-center p-4">Online Lessons</h2>
-        <p>Beginner to advanced Guitar, Bass and Ukulele lessons in music and music theory  covering everthing you need to improve your playing and covering styles including Rock, Pop, Blues, Funk, Jazz, Metal, Fingerstyle & Classical</p>
+    <div>
+        <img id="lessons" class="lesson-image" src="assets/images/online-lessons.png" alt="Image of online ukulele lesson">
+    </div>
+    <div class ="section">
+        <section class="info-box">
+            <h2>Online Lessons</h2>
+            <p>Beginner to advanced Guitar, Bass and Ukulele lessons in music and music theory  covering everthing you need to improve your playing and covering styles including Rock, Pop, Blues, Funk, Jazz, Metal, Fingerstyle & Classical</p>
 
-        <!--Cards Container-->
-        <div class="d-flex flex-wrap container">
-
-            <!--Acoustic Guitar-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/guitar-lessons.png" alt="image of an acoustic guitar player">
-                    <div class="card-body" id="acousic-info">
-                        <h3 class="card-title text-center">Acoustic Guitar</h5>
-                        <p class="card-text">If you want to strum along with your favourite songs, perform at an open mic or work your way though the RGT acoustic guitar grades* I will be able to help you grow as a musician and learn to love the guitar.</p>
-                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                        </div>
-                    </div>
+            <div class="lesson-box">
+                <img src="assets/images/guitar-lessons.png" class="photo photo-square from-left slide-in fade-in" id="acoustic-image" alt="image of an acoustic guitar player">
+                <div class="about-card from-right slide-in fade-in" id="acousic-info">
+                    <h3>Acoustic Guitar</h5>
+                    <p>If you want to strum along with your favourite songs, perform at an open mic or work your way though the RGT acoustic guitar grades* I will be able to help you grow as a musician and learn to love the guitar.</p>
+                    <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                    <a class="lesson-button" href="#contact">Book a lesson!</a>
                 </div>
             </div>
 
-            <!--Electric Guitar-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/electric-lessons.png" alt="image of an electric guitar player">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Electric Guitar</h5>
-                        <p class="card-text">Want to be able to jam along to some backing tracks at home or lead your own band? I can help you improve your musical vocabulary with songs and licks that you’ll be able to play at home, with friends or at gigs. You will also have the opportunity to work your way through the Rockschool Grades for extra UCAS points*.</p>
-                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                        </div>
-                    </div>
+            <div class="lesson-box">
+                <img src="assets/images/electric-lessons.png" class="photo photo-square from-right slide-in fade-in" alt="image of an electric guitar player">
+                <div class="about-card from-left slide-in fade-in">
+                    <h3>Electric Guitar</h5>
+                    <p>Want to be able to jam along to some backing tracks at home or lead your own band? I can help you improve your musical vocabulary with songs and licks that you’ll be able to play at home, with friends or at gigs. You will also have the opportunity to work your way through the Rockschool Grades for extra UCAS points*.</p>
+                    <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                    <a class="lesson-button" href="#contact">Book a lesson!</a>
                 </div>
             </div>
 
-            <!--Classical Guitar-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/classical-lessons.png" alt="image of a classical guitar player">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Classical Guitar</h5>
-                        <p class="card-text">The classical guitar is a good introduction to the guitar and an excellent opportunity to learn to read. If your thinking of starting the guitar and want a good foundation I can help you grow a repertoire of pieces or we can work through the Trinity classical guitar grades*.</p>
-                        <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                        </div>
-                    </div>
+            <div class="lesson-box">
+                <img src="assets/images/classical-lessons.png" class="photo photo-square from-left slide-in fade-in" alt="image of a classical guitar player">
+                <div class="about-card from-right slide-in fade-in">
+                    <h3>CLassical Guitar</h5>
+                    <p>The classical guitar is a good introduction to the guitar and an excellent opportunity to learn to read. If your thinking of starting the guitar and want a good foundation I can help you grow a repertoire of pieces or we can work through the Trinity classical guitar grades*.</p>
+                    <aside aria-label="UCAS points clarification"><em>*UCAS Points for grades 6, 7 & 8 equivalent to an A level.</em></aside>
+                    <a class="lesson-button" href="#contact">Book a lesson!</a>
                 </div>
             </div>
 
-            <!--Bass-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/bass-lessons.png" alt="image of a bass player">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Bass Guitar</h3>
-                        <p class="card-text">Bass is the soul of a band, it makes you want to dance and drives the music along while keeping everyone together. As a session player with almost 20 years playing experience I can show you the way bass works in music, by learning some of the greatest ever bass lines and teaching you to lock in with a drummer.</p>
-                        <p class="card-text">We’ll use songs, backing tracks and jam together to make it as enjoyable as possible. You’ll be able to take the RGT bass guitar grades, so far all my students have achieved distinction at Grade 8*.</p>
-                        <aside aria-label="UCAS points clarification"><em>*Equivalent to an A level in UCAS points.</em></aside>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                        </div>
-                    </div>
+            <div class="lesson-box">
+                <img src="assets/images/bass-lessons.png" class="photo photo-square from-right slide-in" alt="image of a bass player">
+                <div class="about-card from-left slide-in">
+                    <h3>Bass Guitar</h3>
+                    <p>Bass is the soul of a band, it makes you want to dance and drives the music along while keeping everyone together. As a session player with almost 20 years playing experience I can show you the way bass works in music, by learning some of the greatest ever bass lines and teaching you to lock in with a drummer.</p>
+                    <p>We’ll use songs, backing tracks and jam together to make it as enjoyable as possible. You’ll be able to take the RGT bass guitar grades, so far all my students have achieved distinction at Grade 8*.</p>
+                    <aside aria-label="UCAS points clarification"><em>*Equivalent to an A level in UCAS points.</em></aside>
+                    <a class="lesson-button" href="#contact">Book a lesson!</a>
                 </div>
             </div>
 
-            <!--Ukulele-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/ukulele-lessons.png" alt="image of a ukulele player">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Ukulele</h3>
-                        <p class="card-text">The ukulele is one of the easiest instruments to learn and a great gateway to many other instruments. Your first chord takes seconds to master and you’ll be strumming along to a song within half an hour.</p>
-                        <p class="card-text">Just because its easy to pick up doesn’t mean that we can’t push ourselves. I have a catalogue of songs specifically arranged for varying difficulty using a variety of techniques including strumming, finger-picking & percussive rhythm playing. All that can be played solo, with the record or as part of a group.</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="#contact">Book a lesson!</a>
-                        </div>
-                    </div>
+            <div class="lesson-box">
+                <img src="assets/images/ukulele-lessons.png" class="photo photo-square from-left slide-in fade-in" alt="image of a ukulele player">
+                <div class="about-card from-right slide-in fade-in">
+                    <h3>Ukulele</h3>
+                    <p>The ukulele is one of the easiest instruments to learn and a great gateway to many other instruments. Your first chord takes seconds to master and you’ll be strumming along to a song within half an hour.</p>
+                    <p>Just because its easy to pick up doesn’t mean that we can’t push ourselves. I have a catalogue of songs specifically arranged for varying difficulty using a variety of techniques including strumming, finger-picking & percussive rhythm playing. All that can be played solo, with the record or as part of a group.</p>
+                    <a class="lesson-button" href="#contact">Book a lesson!</a>
                 </div>
             </div>
+        </section>
 
-            <!--Online Courses-->
-            <div class="container col-md-6 col-xl-4">
-                <div class="card shadow m-3">
-                    <img class="card-img-top" src="assets/images/ukulele-confidence-avatar.png" alt="image of a ukulele player">
-                    <div class="card-body">
-                        <h3 class="card-title text-center">Online Courses</h3>
-                        <p class="card-text">Follow along at your own pace through the 6 week programme designed to improve all areas of your playing in a step-by-step way. Taking you through 6 songs with worksheets, backing tracks and video lessons.</p>
-                        <p class="card-text">By the end of this course, you'll have not only expanded your ukulele skills but also gained a deeper understanding of music as a whole. You'll be equipped to tackle a wide range of songs and even explore other instruments with confidence.</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-primary" href="/academy.html">Login to the Academy!</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="about-dan">
+            <h2>About Daniel Morriss</h2>
+            <img  id="dan-image" class="photo photo-avatar" src="assets/images/dan-avatar1.png" alt="Dan playing the Mandolin">
+            <div id="dan-bio">
+                <p class="fade-in">Daniel first picked up the bass guitar at 13 and began lessons with legendary bass player Brian Gregg (Johnny Kidd and the Pirates, Bob Dylan, The Tornadoes). This cemented his love for making music and led him to study BTEC Music Performance and achieve Grade 8 in the bass and guitar.</p>
+                <p class="fade-in">Playing in bands throughout school and college Daniel always enjoyed performing and started touring at 19, spending most of the next 10 years on the road. As a founding member of Echotape he had the chance to tour across Europe, America and Russia and has supported some of his childhood idols including The White Stripes, Queens of the Stone Age and Oceansize.</p>  
+                <p class="fade-in">Daniel's songwriting talents have garnered recognition worldwide, with his compositions receiving airplay and television exposure across the globe. He has experienced the exhilaration of playing sold-out stadium gigs and gracing numerous festivals with his electrifying performances. However, amidst his successful career as a musician, Daniel discovered a newfound passion for teaching, leading him to become a Licentiate of the London College of Music for Guitar Tuition.</p>
+                <p class="fade-in">Currently, Daniel imparts his expertise in electric guitar, acoustic guitar, classical guitar, bass guitar, and ukulele through one-on-one lessons and group sessions. Despite his focus on teaching, Daniel continues to indulge his musical spirit by performing on bass and guitar, collaborating with bands like Ruby Boots and Alibis. As a founding member and esteemed house bass player for the Newbury Jazz Platform, his musical journey continues to evolve and inspire.</p>
             </div>
         </div>
     </div>
-    
-    <!--About Dan Section-->
-    <img id="about-dan" class="img-fluid" src="assets/images/danhero.png" alt="Dan playing the Bass">
-    <div class="container">
-        <h2 class="text-center p-4">About Daniel Morriss</h2>
-        <p>Daniel first picked up the bass guitar at 13 and began lessons with legendary bass player Brian Gregg (Johnny Kidd and the Pirates, Bob Dylan, The Tornadoes). This cemented his love for making music and led him to study BTEC Music Performance and achieve Grade 8 in the bass and guitar.</p>
-        <p>Playing in bands throughout school and college Daniel always enjoyed performing and started touring at 19, spending most of the next 10 years on the road. As a founding member of Echotape he had the chance to tour across Europe, America and Russia and has supported some of his childhood idols including The White Stripes, Queens of the Stone Age and Oceansize.</p>  
-        <p>Daniel's songwriting talents have garnered recognition worldwide, with his compositions receiving airplay and television exposure across the globe. He has experienced the exhilaration of playing sold-out stadium gigs and gracing numerous festivals with his electrifying performances. However, amidst his successful career as a musician, Daniel discovered a newfound passion for teaching, leading him to become a Licentiate of the London College of Music for Guitar Tuition.</p>
-        <p>Currently, Daniel imparts his expertise in electric guitar, acoustic guitar, classical guitar, bass guitar, and ukulele through one-on-one lessons and group sessions. Despite his focus on teaching, Daniel continues to indulge his musical spirit by performing on bass and guitar, collaborating with bands like Ruby Boots and Alibis. As a founding member and esteemed house bass player for the Newbury Jazz Platform, his musical journey continues to evolve and inspire.</p>
-    </div>
 
-    <!--Contact Form-->
-    <div id="contact m-4" class="container card mb-3 shadow-lg">
-            <h2 class="d-flex justify-content-center m-3">Contact</h2>
+    <section class="contact-box" id="contact">
+        <div class="contact-div">
+            <h2>Contact</h2>
             <p>Lessons available from Tuesday to Friday from 9am to 7pm. Please get in touch for more information or a free taster session.</p>
-        
-        <div class="container" id="contact">
             <form action="https://formsubmit.co/37ea1fde9e4fe78c58aad677bd73801d" method="POST">
                 <input type="hidden" name="_next" value="thanks.html">
                 <input type="hidden" name="_subject" value="New lesson inquiry!">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_autoresponse" value="Thanks for your message, I'll get back to you as soon as I can.">
-                
-                <div class="questions row">
-                    <!--Name-->
-                    <div class="form-floating col-6 mb-2">
-                        <input class="form-control" type="text" id="fname" name="fname" minlength="3" placeholder="Harry" required>
-                        <label class="form-label ms-2" for="fname">First Name</label>
+                <div class="questions">
+                    <div class="form-question">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" minlength="3" required>
                     </div>
-                    <div class="form-floating col-6 mb-2">
-                        <input class="form-control" type="text" id="lname" name="lname" placeholder="Potter" required>
-                        <label class="form-label ms-2" for="lname">Last Name</label>
+                    <div class="form-question">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required>
                     </div>
-                    <!--Email-->
-                    <div class="form-floating mb-2">
-                        <input class="form-control" type="email" id="email" name="email" placeholder="name@email.com" required>
-                        <label class="form-label ms-2" for="email">Email:</label>
+                    <div class="form-question">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <!--Phone-->
-                    <div class="form-floating mb-2">
-                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="+44" required>
-                        <label class="form-label ms-2" for="phone">Phone:</label>
+                    <div class="form-question">
+                        <label for="instrument">Instrument:</label>
+                        <input type="instrument" id="instrument" name="instrument" required>
                     </div>
-                    <!--Instrument-->
-                    <div class="form-question mb-2">
-                        <label class="form-label" for="instrument">Instrument:</label>
-                        <select class="form-select" type="instrument" id="instrument" name="instrument" required>
-                            <option>Guitar</option>
-                            <option>Bass</option>
-                            <option>Ukulele</option>
-                        </select>
+                    <div class="form-question">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
-                    <!--Message-->
-                    <div class="form-question mb-2">
-                        <label class="form-label" for="message">Message:</label>
-                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    <div class="form-question">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
-                </div>
-                <!--GDPR Consect-->
+                </div>    
                 <div class="consent">
+                    <label for="gdpr"><em>I consent to having this website store my submitted information so they can respond to my enquiry.</em></label>
                     <input type="checkbox" id="gdpr" name="gdpr" required>
-                    <label class="form-label" for="gdpr"><em>I consent to having this website store my submitted information so they can respond to my enquiry.</em></label>
-                </div>
-                <!--Submit Button-->
-                <div class="d-grid gap-2 col-3 mx-auto">
-                    <input class="btn btn-primary mb-3" type="submit" value="Submit" id="submit">
-                </div>
+                </div>  
+                <input type="submit" value="Submit" id="submit">
             </form>
         </div>
-    </div>
+    </section>
 
-    <footer class="bg-dark text-white p-3">
-        <div class="container text-center">
-            <!--Policies-->
-            <ul class="list-inline" id="policies">
-                <li class="list-inline-item p-3" data-bs-toggle="modal" data-bs-target="#privacyModal">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
+    <footer>
+        <div>
+            <ul id="policies">
+                <li>
+                    <a href="#">Privacy Policy</a>
                 </li>
-
-                <li class="list-inline-item p-3">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#cancellationModal">Cancellation Policy</a>
+                <li>
+                    <a href="#">Cancellation Policy</a>
                 </li>
             </ul>
-
-            <!--Privacy Policies Modal-->
-            <div class="modal fade text-black" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title fs-5">Privacy Policy</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="h4">When do you collect data about me?</p>
-                            <p>We collect data from you when you use our website or forms to make an enquiry.</p>
-                            <p class="h4">Personal Information:</p>
-                            <p>When you make an enquiry we collect certain personal information about you, to enable us to to respond to you in an appropriate and timely manner. Information collected via the website is limited to your name, telephone contact and email address.</p>
-                            <p>As a customer we may hold imagery of you for which we will have obtained prior written consent from you. These images may be used on our website, Facebook page and/or any marketing materials we issue. Any images of students will only be retained by us for as long as they are a student with us.</p>
-                            <p class="h4">Analytical Information:</p>
-                            <p>Analytical website software used to better understand the trends of our customers; this helps us improve the layout and relevance of the website for your benefit. See “Cookies Policy” for more information.</p>
-                            <p class="h4">What do you do with my personal information?</p>
-                            <p>We use your contact details to communicate with you in order to respond to your enquiry.</p>
-                            <p>Your data may also be used for administrative and accounting purposes and to help us in any future dealings with you, for example by identifying your requirements.</p>
-                            <p>There may be instances where it may be necessary for us to communicate with you, for administrative or operational reasons relating, for example, to advise you of changes in lesson times.</p>
-                            <p>The information you provide to us will be held in our systems, which are located on our premises or those of an appointed third party.</p>
-                            
-                            <p class="h4">Do you sell my information to third parties</p>
-                            <p>We do not sell your information to third parties. Please see “disclosure to third parties” below for more information.</p>
-                            
-                            <p>Site Tracking</p>
-                            <p>We use tracking software to monitor customer traffic patterns and site usage to help us develop the design and layout of the site to better meet the needs of visitors to our website. This software does not enable us to capture any personally identifying information.</p>
-                            <p>In addition to the information which you may volunteer to us, some information is automatically collected when you visit our website via tracking technologies employed by us such as cookies, flash cookies, web bugs, javascript. These technologies collect technical information from your computer such as your Internet protocol (IP) address, your operating system and platform, browser type and version and referrer website whenever you visit our website.</p>
-
-                            <p class="h4">Security to protect your information</p>
-                            <p>When you make an enquiry or enter personally identifying information your details are transmitted across the internet securely using high-grade encryption (256 bit).In addition, as required by the (“GDPR”) General Data Protection Regulation, we follow strict security procedures in the storage and disclosure of information which you have given us, to prevent unauthorised access</p>
-                            <p>We will retain your information for a reasonable period or as long as the law requires. This does not include the retention of any personal imagery which will be destroyed upon cessation of lessons with Morriss Music (see “Personal Information”, above).</p>
-                            <p>To help us keep our databases up to date, please let us know as soon as your contact details change or if you notice any inaccuracies in them</p>
-
-                            <p class="h4">Cookies</p>
-                            <p>This site uses cookies – small text files that are placed on your machine to help the site provide a better user experience. In general, cookies are used to retain user preferences, store information for things like shopping baskets, and provide anonymised tracking data to third party applications like Google Analytics. Our cookies do not contain any personally identifying information. As a rule, cookies will make your browsing experience better. However, you may prefer to disable cookies on this site and on others. The most effective way to do this is to disable cookies in your browser. We suggest consulting the Help section of your browser or taking a look at the About Cookies website which offers guidance for all modern browsers</p>
-                            
-                            <p class="h4">Disclosure to third parties</p>
-                            <p>Morriss Music will not use your personal information for any purpose other than in connection with our services in accordance with our privacy policy, or supply it to any third party unless required in order to provide our services to you or to protect you or MHVS from fraud or theft.
-
-                            <p>For your convenience and information Morriss Music may provide links to other websites. These sites may have different security and privacy policies that we have no control over and we take no responsibility for any information contained in these sites.</p>
-                                
-                            <p>Such third party websites may contain privacy policies that differ from that of Morriss Music and we encourage you to review and understand their privacy policies before providing them with information.</p>
-                            
-                            <p class="h4">Your Consent</p>
-                            <p>By using our services and by accessing our website, you are consenting to the collection and use of the information described above in our Privacy Policy, as modified from time to time by us.
-
-                            <p>If you have any further questions about our Privacy Policy or its implementation, or if you would like to ask us about the information we are holding about you, please email us at daniel@morrissmusic.co.uk</p>
-                                
-                            <p>If we change our Privacy Policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it and in what circumstances we disclose it.</p>
-                            
-                            <p class="h4">Disclaimer</p>
-                            
-                            <p>Information on this site is posted in good faith and updated regularly, but Morriss Music cannot guarantee its completeness and accuracy. Morriss Music does not accept any liability to you or any third party for any error or omission on this site. Morriss Music may change, update or delete the terms and conditions or any information on this site without prior notice.</p>
-
-                            <p>Morriss Music does not warrant that this site will be uninterrupted, error free or that any information or other material accessible from this site is free of viruses or other harmful components.</p>
-
-                            <p>Morriss Music is not liable for any direct or indirect loss resulting from your use of the information on this site.</p>
-
-                            <p class="h4">Intellectual property</p>
-                            The Morriss Music name, logo and all related product and service names, design marks and slogans are the trademarks or service marks of Morriss Music. All other names, logos and all related product and service names, design marks and slogans used on this site are the trademarks or service marks of their owners. All rights are acknowledged.</p>
-
-                            <p>The copyright in all teaching material, slides, photographs, images, maps, travel information and other material on this site rests with Morriss Music or its suppliers, unless explicitly stated otherwise. Your access to the material and products or services available through this website does not give you a licence to modify, display, license, transfer, sell, reproduce, distribute or otherwise use any material (including data).</p>
-
-                            <p>You may link to the home page of this site, but may not:</p>
-                            <ul>
-                            <li>deep-link or use frames to limit the complete and full intended use of this site;</li>
-
-                            <li>bypass or circumvent any measures employed by Morriss Music to limit such deep linking or use of frames;</li>
-
-                            <li>impose, in Morriss Music’s opinion, an unreasonable or disproportionately large load on this website;</li>
-
-                            <li>use any robot, spider, scraper or other automated means or manual process to access, monitor or copy any material on this website; or</li>
-
-                            <li>>you may not use in any way these rights or other intellectual property rights in material relating to this website without the prior written consent of Morriss Music.</li>
-                            </ul>
-                            <p class="h4">Applicable law and jurisdiction</p>
-                            These site terms shall be governed by English law. Any disputes involving this site shall be subject to the jurisdiction of the English courts.</p>
-
-                            <p class="h4">No unlawful or prohibited use</p>
-                            As a condition of your use of this site you warrant to Morriss Music that you will not use this site for any purpose that is unlawful or prohibited by these terms, conditions and notices.</p>
-
-                            <p>All rights reserved. No part of this website or data contained within it may be reproduced in any form without permission of the copyright owner.</p>
-
-                            <p>Warning: the doing of an unauthorised act in relation to a copyright work may result in both a civil claim for damages and criminal prosecution.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Cancellation Policiy Modal-->
-            <div class="modal fade text-black" id="cancellationModal" tabindex="-1" aria-labelledby="cancellationModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <p class="modal-title fs-5">Cancellation Policy</p>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="h4">If you can’t attend a lesson</p>
-                            <p>If you can’t make your lesson let me know 24 hours in advance so we can rearrange another time that works for both of us. You will be charged the full lesson price for missing a lesson with less than 24 hours notice. </p>
-                            <p class="h4">If I can’t attend a Lesson</p>
-                            <p>If I have to cancel a lesson, I will endeavour to give you as much notice as possible and we can rearrange another time that works for both of us.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Social Icons-->
-            <ul class="list-inline" id="social-icons">
-                <li class="list-inline-item p-3">
-                    <a class="display-3" href="https://www.facebook.com/morrissmusic" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+            <ul id="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/morrissmusic" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
                         <!-- font awesome icon -->
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
-
-                <li class="list-inline-item p-3">
-                    <a class="display-3" href="https://www.youtube.com/danielmorrissbass" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+                <li>
+                    <a href="https://www.youtube.com/danielmorrissbass" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
                         <!-- font awesome icon -->
                         <i class="fa-brands fa-youtube"></i>
                     </a>
