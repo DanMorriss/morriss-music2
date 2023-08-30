@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5 {
   font-family: 'Roboto Serif', serif;
 } 
 
+/* --------------------------------------Navigation */
+
 #navigation a {
   transition: all .2s ease-in-out;
 }
@@ -29,4 +31,11 @@ h1, h2, h3, h4, h5 {
   #navigation a:hover {
     transform: scale(0.96);
   }
+}
+
+/* -----------------------------------------Academy */
+
+.sheet-music-image {
+  max-width: 700px;
+  justify-content: center;
 }
