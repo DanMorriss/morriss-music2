@@ -39,3 +39,34 @@ h1, h2, h3, h4, h5 {
   max-width: 700px;
   justify-content: center;
 }
+
+/* -------------------------------------Sheet Music */
+
+
+.accordion-button {
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.accordian-body ul {
+  padding-left: 0;
+}
+
+.accordian-body li {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color:blue;
+}
+
+.accordian:last-of-type {
+  padding-bottom: 1rem;
+} 
